@@ -7,14 +7,13 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  
   plugins: [
     vue({
-      template: { transformAssetUrls },
+      template: { transformAssetUrls }
     }),
     vuetify({
       autoImport: true,
-      styles: { configFile: 'src/assets/home.scss' },
+      styles: { configFile: 'src/assets/home.scss' }
     }),
   ],
   resolve: {
@@ -34,9 +33,4 @@ export default defineConfig({
   server: {
     port: 8002,
   },
-  module:{
-    publicPath: process.env.NODE_ENV === 'production' ? 
-    '/ProjetoExtensaoProgWeb' : '/'
-}
 })
-
