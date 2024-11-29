@@ -37,10 +37,10 @@
       </v-row>
     </v-carousel-item>
   </v-carousel>
-  <v-divider color="black" class="ma-4"></v-divider>
-  
+
+  <v-divider color="black" class="ma-4"></v-divider>  
     <show-case />
-  
+
   <v-divider color="black" class="ma-4"></v-divider>
 </template>
 
@@ -59,13 +59,13 @@ export default {
           titulo: 'Logotipo',
           descricao: ' Logotipo profissional e versátil, ideal para aplicações em materiais digitais, como sites e redes sociais, bem como em materiais impressos, como placas, letreiros, banners, adesivos e outros.',
           link: '/logotipo',
-          imagem: './src/imagens/Logo.jpg', // Link para a imagem do serviço de logotipo
+          imagem: './src/imagens/Logo.jpg',
         },
         {
           titulo: 'Gerenciamento Inteligente',
           descricao: 'Soluções inteligentes para otimizar a gestão do seu negócio. No gerenciamento convencional, muitas vezes, um profissional atende vários clientes do mesmo nicho para otimizar o tempo e replicar estratégias. No nosso Gerenciamento Inteligente, as estratégias são rotativas e adaptáveis, moldadas pelas principais tendências do mercado, visando alcançar os objetivos traçados. Abordamos o seu negócio sob uma perspectiva de 360 graus, garantindo que suas estratégias estejam sempre em evolução.',
           link: '/gerenciamento-inteligente',
-          imagem: './src/imagens/Gerenciamento.jpg', // Link para a imagem do serviço de gerenciamento
+          imagem: './src/imagens/Gerenciamento.jpg',
         },
       ],
     };

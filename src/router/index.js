@@ -1,8 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
-//import { isLoggedIn, setHeadersAuthToken } from '@/services/auth/authService'
-
 const routes = [
   {
     path: '/',
@@ -63,26 +61,11 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-
-  // Seta header padrao de autorizacao na biblioteca do axios
-  //setHeadersAuthToken()
-
-  // Valida se usuario esta logado e tentando acessar a tela de login
   if ((to.name === 'index' || to.name === 'login')) {
 
     next({ path: '/Home' })
     return;
-
-  // Valida se rota é bloqueada e usuario nao esta logado
-  } /*else if (to.matched.some(record => !record.meta.allowAnonymous)) {
-
-    next({
-      path: '/login',
-      query: { redirect: to.fullPath }
-    })
-    return;
-
-  }*/ else next();
+  } else next();
 })
 
 export default router

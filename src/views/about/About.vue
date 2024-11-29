@@ -57,9 +57,6 @@
                 Inovação constante: Estou sempre de olho nas tendências e avanços do setor para implementar soluções inovadoras e relevantes para você.
               </li>
             </ul>
-            
-            
-            
           </p>
           <p>
             Juntos, podemos transformar sua presença digital em uma ferramenta poderosa, capaz de impulsionar sua marca para novos patamares de sucesso!
@@ -103,8 +100,8 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a imagem */
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   mix-blend-mode: multiply;
 }
 
@@ -112,12 +109,12 @@ export default {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a imagem */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .introduction-section {
-  background-color: #ffffff; /* Fundo branco para a seção de trodução */
+  background-color: #ffffff;
   padding: 20px 0;
 }
 
@@ -144,14 +141,14 @@ export default {
 }
 
 .services-section {
-  background-color: #f7f7f7; /* Fundo cinza claro para a seção de serviços */
+  background-color: #f7f7f7;
   padding: 20px 0;
 }
 
 .services-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  padding-left: 20px; /* Padding para alinhar com o texto */
+  padding-left: 20px;
 }
 
 .services-section ul {

@@ -1,8 +1,8 @@
 <template>
 <!-- Seção de informações de contato -->
 <v-card class="contact-info-section ma-4 pa-4">
-  <v-row justify="center">
-    <v-col cols="12" md="6" >
+  <v-row justify="center" style="text-align: center;">
+    <v-col cols="12" md="12" class="pa-16">
       <h1 class="contact-title">Tainá Negretti</h1>
       <div class="contact-subtitle" color="primary">Eleve o patamar de sua empresa!</div>
       <div>
@@ -33,10 +33,8 @@
         aria-hidden="false"
         tabindex="0">
       </iframe>
-    </v-col>
 
-    <v-col cols="12" md="4">
-      <v-card class="contact-card">
+      <v-card class="contact-card mt-4">
         <v-card-title class="contact-card-title">Entre em contato!</v-card-title>
         <v-card-text>
           <v-form>
@@ -54,6 +52,10 @@
           <v-btn color="secondary" text>Enviar</v-btn>
         </v-card-actions>
       </v-card>
+    </v-col>
+
+    <v-col cols="12" md="4">
+      
     </v-col>
   </v-row>
 </v-card>
@@ -73,7 +75,7 @@ export default {
 .contact-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
 }
 
 .contact-subtitle {
@@ -91,7 +93,7 @@ export default {
   width: 100%;
   height: 350px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o mapa */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-section {
@@ -100,7 +102,7 @@ export default {
 
 .contact-card {
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card-title {
