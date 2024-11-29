@@ -15,9 +15,6 @@ export default defineConfig({
       autoImport: true,
       styles: { configFile: 'src/assets/home.scss' }
     }),
-    module.exports = {
-      publicPath: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
-    },
   ],
   resolve: {
     alias: {
@@ -37,7 +34,3 @@ export default defineConfig({
     port: 8002,
   },
 })
-
-module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
-};
