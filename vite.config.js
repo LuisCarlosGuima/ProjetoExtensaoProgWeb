@@ -7,7 +7,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/ProjetoExtensaoProgWeb/',
+  base: process.env.NODE_ENV === 'production' ? '/ProjetoExtensaoProgWeb/' : '/', // Defina o nome do repositório aqui
   plugins: [
     vue({
       template: { transformAssetUrls }
