@@ -36,7 +36,7 @@ export default defineConfig({
   },
   module:{
     publicPath: process.env.NODE_ENV === 'production' ? 
-    '/vuejs-gh-pages-gh-actions' : '/'
+    '/ProjetoExtensaoProgWeb' : '/'
 }
 })
 
