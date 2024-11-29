@@ -35,12 +35,12 @@
         <div style="margin-left: 300px;">
           <div>Redes Sociais</div>
           <div>
-            <a href="https://www.facebook.com/praiaalegreimoveis" target="_blank" class="text-decoration-none social-link">
+            <a href="https://www.facebook.com/tainanegretti" target="_blank" class="text-decoration-none social-link">
               <v-icon icon="mdi-facebook" color="secondary"/> @tainanegretti
             </a>
           </div>
           <div>
-            <a href="https://www.instagram.com/praiaalegreimoveis/" target="_blank" class="text-decoration-none social-link">
+            <a href="https://www.instagram.com/tainanegretti/" target="_blank" class="text-decoration-none social-link">
               <v-icon icon="mdi-instagram" color="secondary"/> @tainanegretti
             </a>
           </div>

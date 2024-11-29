@@ -26,7 +26,7 @@ export default {
   setup() {
 
     onMounted(() => {
-      document.body.classList.add('praiaAlegre')
+      document.body.classList.add('projetoExtensaoProgWeb')
     })
 
     return {
