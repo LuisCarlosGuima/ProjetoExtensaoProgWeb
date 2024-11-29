@@ -9,9 +9,15 @@
     <v-carousel-item v-for="(servico, index) in servicos" :key="index">
       <v-row justify="center" class="ma-1">
         <v-col cols="12" md="12">
-          <v-card class="service-card fill-height pa-4">
+          <v-card class="service-card fill-height pa-4" style="min-height: 760px;">
             <!-- Exibe a imagem do serviço -->
-            <v-img :src="servico.imagem" height="200px" class="mb-3"></v-img>
+            <img 
+              :src="servico.imagem" 
+              height="500px" 
+              width="100%" 
+              style="object-fit: cover !important; border-radius: 12px;" 
+              class="mb-3"
+            />
 
             <v-card-title class="text-h5 font-weight-bold">
               {{ servico.titulo }}
@@ -53,13 +59,13 @@ export default {
           titulo: 'Logotipo',
           descricao: ' Logotipo profissional e versátil, ideal para aplicações em materiais digitais, como sites e redes sociais, bem como em materiais impressos, como placas, letreiros, banners, adesivos e outros.',
           link: '/logotipo',
-          imagem: 'link_para_imagem_logotipo.jpg', // Link para a imagem do serviço de logotipo
+          imagem: './src/imagens/Logo.jpg', // Link para a imagem do serviço de logotipo
         },
         {
           titulo: 'Gerenciamento Inteligente',
           descricao: 'Soluções inteligentes para otimizar a gestão do seu negócio. No gerenciamento convencional, muitas vezes, um profissional atende vários clientes do mesmo nicho para otimizar o tempo e replicar estratégias. No nosso Gerenciamento Inteligente, as estratégias são rotativas e adaptáveis, moldadas pelas principais tendências do mercado, visando alcançar os objetivos traçados. Abordamos o seu negócio sob uma perspectiva de 360 graus, garantindo que suas estratégias estejam sempre em evolução.',
           link: '/gerenciamento-inteligente',
-          imagem: 'link_para_imagem_gerenciamento.jpg', // Link para a imagem do serviço de gerenciamento
+          imagem: './src/imagens/Gerenciamento.jpg', // Link para a imagem do serviço de gerenciamento
         },
       ],
     };
