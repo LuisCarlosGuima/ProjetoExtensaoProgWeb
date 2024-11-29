@@ -1,0 +1,61 @@
+/**
+**** Tela agenda
+****
+**** Componente customizado de check box colorido
+****
+*/
+$color-amend: #4caf50;
+$color-spot: #2b231b;
+$color-big: #ff5252;
+
+.colorful-custom--checkbox  > input[type=checkbox] {
+  display: none;
+}
+
+.colorful-custom--checkbox  > .color--green + label:before {
+  background-color: $color-amend;
+}
+.colorful-custom--checkbox  > .color--red + label:before {
+  background-color: $color-big;
+}
+.colorful-custom--checkbox  > .color--orange + label:before {
+  background-color: $color-spot;
+}
+
+.colorful-custom--checkbox  > input[type=checkbox] + label:before {
+  content: "\2714";
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+.colorful-custom--checkbox  > input[type=checkbox] + label:active:before {
+  transform: scale(0.5);
+}
+
+.colorful-custom--checkbox  > .color--green input[type=checkbox]:checked + label:before {
+  background-color: $color-amend;
+}
+.colorful-custom--checkbox  > .color--red input[type=checkbox]:checked + label:before {
+  background-color: $color-big;
+}
+.colorful-custom--checkbox  > .color--orange input[type=checkbox]:checked + label:before {
+  background-color: $color-spot;
+}
+
+.colorful-custom--checkbox  > input[type=checkbox]:checked + label:before {
+  text-align: center;
+  color: #fff;
+}
+
+.colorful-custom--checkbox  > input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('./components/components.scss');
+
+@import url('./components/index.scss');
+
+// Definindo font padrao de todo o sistema
+$font-family: 'Roboto', sans-serif;
+
+.v-application {
+  [class*="text-"] {
+
+    font-family: $font-family, sans-serif !important;
+  }
+
+  font-family: $font-family, sans-serif !important;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(252, 1, 102) rgba(34, 37, 40, 0.286);
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar,
+.v-navigation-drawer__content::-webkit-scrollbar,
+// .v-data-table__wrapper::-webkit-scrollbar,
+textarea::-webkit-scrollbar,
+.col::-webkit-scrollbar,
+.v-card::-webkit-scrollbar {
+// .ag-body-horizontal-scroll-viewport::-webkit-scrollbar,
+// .ag-body-vertical-scroll-viewport::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track,
+.v-navigation-drawer__content::-webkit-scrollbar-track,
+// .v-data-table__wrapper::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track,
+.col::-webkit-scrollbar-track,
+.v-card::-webkit-scrollbar-track {
+// .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track,
+// .ag-body-vertical-scroll-viewport::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.150);
+}
+
+body::-webkit-scrollbar-thumb,
+.v-navigation-drawer__content::-webkit-scrollbar-thumb,
+// .v-data-table__wrapper::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb,
+.col::-webkit-scrollbar-thumb,
+.v-card::-webkit-scrollbar-thumb {
+// .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb,
+// .ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, rgba(93, 131, 198) 0%, rgba(93, 131, 198) 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}

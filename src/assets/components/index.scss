@@ -1,0 +1,34 @@
+// Estilos para o portal através do dominio AMTrans
+.praiaAlegre {
+
+  --color-base: #222528;
+  --color-secondary: #FC0166;
+  --color-tertiary: white;
+  
+
+  // 
+  // Configurações principais de tema que impacta em todos os objetos.
+  // 
+  .text-primary {
+    color: var(--color-base) !important;
+    caret-color: var(--color-base) !important;
+  }
+
+  .text-secondary {
+    color: var(--color-secondary) !important;
+    caret-color: var(--color-secondary) !important;
+  }
+
+  .bg-primary {
+    background-color: var(--color-base) !important;
+    border-color: var(--color-base) !important;
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary) !important;
+    border-color: var(--color-secondary) !important;
+  }
+  .background{
+    color: var(--color-base) !important;
+  }
+}
